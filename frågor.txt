@@ -1,0 +1,2 @@
+Man får ha for-loop i rekursiv enligt slide 50 lecture 1.
+Uppgift 3 :: Ska vi skriva ut bara filer eller även subdirectories.
