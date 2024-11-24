@@ -49,5 +49,7 @@ for i in range(3):
     lst = random.sample(range(-10**5, 10**5), y)
     threesum(lst)
     plt.scatter(y, (time.time() - start_time), c=colors[i])
+plt.xlabel('List sizes from 100 to 775')
+plt.ylabel('Computation time up to 5 seconds')
 plt.legend()
 plt.show()
