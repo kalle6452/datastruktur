@@ -40,7 +40,6 @@ for y in range(100, 400, 50):
         threesum(lst)
         lista.append(time.time() - start_time)
     plt.scatter(y, (sum(lista)/2), c='blue')
-    # lista = []
 
 
 def mean(length):
@@ -78,8 +77,10 @@ k = coefficient(x, mean_x, lista, mean_y, var_x)
 # Intercept
 m = intercept(mean_y, mean_x, k)
 print(k)
-
-
+print(m)
+x = np.arange(0, 100, 400)
+y = k*x + m
+plt.plot(x, y)
 # För regression, x = x, lista = y
 # We start by defining functions.
 # Mean
