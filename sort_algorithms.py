@@ -2,7 +2,8 @@ import time
 import random
 
 
-def selection(lista):
+def selection(lst):
+    lista = lst.copy()
     n = len(lista)
     for i in range(n-1):
         min_idx = i
@@ -57,7 +58,7 @@ def insertion_3(lista):
 lista = [64, 34, 25, 5, 22, 11, 90, 12]
 
 lista = random.sample(range(-10**5, 10**5), 4000)
-print(insertion_3(lista))
+print(selection(lista))
 """ start_time = time.time()
 insertion(lista)
 print(time.time() - start_time)
